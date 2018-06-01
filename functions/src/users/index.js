@@ -12,7 +12,7 @@ const getAllUser = (limit, res) =>
 
 // If dni or not dni
 const getUser = (req, res) => {
-  const { dni, limit } = req.query;
+  const { dni, limit = 10 } = req.query;
   if (dni) {
     getUserDni(dni, res);
   } else {

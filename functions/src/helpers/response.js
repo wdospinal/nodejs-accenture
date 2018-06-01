@@ -2,9 +2,9 @@ const { errorCodes } = require('./constants');
 
 function respondWithResult(res, code) {
   const statusCode = code || 200;
-  return (result) => {
-    if (result) {
-      return res.status(statusCode).json(result);
+  return (message) => {
+    if (message) {
+      return res.status(statusCode).json({ message, code });
     }
     return res.sendStatus(statusCode);
   };

@@ -30,6 +30,7 @@
     "url": "git@github.com:wdospinal/accenture-api.git"
   },
   "dependencies": {
+    "cors": "^2.8.4",
     "firebase-admin": "^5.11.0",
     "firebase-functions": "^0.8.2"
   }
